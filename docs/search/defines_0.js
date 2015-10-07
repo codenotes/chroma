@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['rzresult_5faccess_5fdenied',['RZRESULT_ACCESS_DENIED',['../_rz_errors_8h.html#a585a0c6b703146cb3918e0f22cafc8e9',1,'RzErrors.h']]],
+  ['rzresult_5falready_5finitialized',['RZRESULT_ALREADY_INITIALIZED',['../_rz_errors_8h.html#a0b875fac59fd1529428d66f5bd774b7d',1,'RzErrors.h']]],
+  ['rzresult_5fdevice_5fnot_5favailable',['RZRESULT_DEVICE_NOT_AVAILABLE',['../_rz_errors_8h.html#afa27c61da1030e6d3602f569e3c64e4e',1,'RzErrors.h']]],
+  ['rzresult_5fdevice_5fnot_5fconnected',['RZRESULT_DEVICE_NOT_CONNECTED',['../_rz_errors_8h.html#a4613946b0d5dfc52f612306eeba8b406',1,'RzErrors.h']]],
+  ['rzresult_5ffailed',['RZRESULT_FAILED',['../_rz_errors_8h.html#a9b688f25538d9958f94ac667ab4763aa',1,'RzErrors.h']]],
+  ['rzresult_5finvalid',['RZRESULT_INVALID',['../_rz_errors_8h.html#a213fe2eac8cde57bdc42c3d344e9c2e2',1,'RzErrors.h']]],
+  ['rzresult_5finvalid_5fhandle',['RZRESULT_INVALID_HANDLE',['../_rz_errors_8h.html#ab385e5113e16e4d41f961ae2791454d0',1,'RzErrors.h']]],
+  ['rzresult_5finvalid_5fparameter',['RZRESULT_INVALID_PARAMETER',['../_rz_errors_8h.html#a224e5d34bcf1f743e28cb6cfeb920915',1,'RzErrors.h']]],
+  ['rzresult_5fnot_5ffound',['RZRESULT_NOT_FOUND',['../_rz_errors_8h.html#a1539554d6db5211b4ea488ae235e2364',1,'RzErrors.h']]],
+  ['rzresult_5fnot_5fsupported',['RZRESULT_NOT_SUPPORTED',['../_rz_errors_8h.html#a29dad96739dfa0c015f3d507e033a2fa',1,'RzErrors.h']]],
+  ['rzresult_5fnot_5fvalid_5fstate',['RZRESULT_NOT_VALID_STATE',['../_rz_errors_8h.html#a417ed272ea27592b40078e0720a80e39',1,'RzErrors.h']]],
+  ['rzresult_5frequest_5faborted',['RZRESULT_REQUEST_ABORTED',['../_rz_errors_8h.html#a42f3e6bf8dc550f1b7c15619295d5217',1,'RzErrors.h']]],
+  ['rzresult_5fresource_5fdisabled',['RZRESULT_RESOURCE_DISABLED',['../_rz_errors_8h.html#aa3ef350038bb119a19312363e99e1117',1,'RzErrors.h']]],
+  ['rzresult_5fservice_5fnot_5factive',['RZRESULT_SERVICE_NOT_ACTIVE',['../_rz_errors_8h.html#ab8859f83f01222809fa0aaa41fe96868',1,'RzErrors.h']]],
+  ['rzresult_5fsingle_5finstance_5fapp',['RZRESULT_SINGLE_INSTANCE_APP',['../_rz_errors_8h.html#a269e4a58374cf88a7e32bb7b724c54b5',1,'RzErrors.h']]],
+  ['rzresult_5fsuccess',['RZRESULT_SUCCESS',['../_rz_errors_8h.html#a9cf23882892ed682425a34ec984ac837',1,'RzErrors.h']]]
+];

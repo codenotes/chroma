@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<application>
+    <title>Title of your application</title>
+    <description>Some description</description>
+    <author name="Your name" contact="http://www.your_web_site_or_email.com"/>
+    <device_supported keyboard="0" mouse="0" headset="0" mousemat="0" keypad="0"/>
+</application>

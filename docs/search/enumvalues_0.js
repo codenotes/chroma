@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['back_5fto_5ffront',['BACK_TO_FRONT',['../struct_chroma_s_d_k_1_1_mouse_1_1_w_a_v_e___e_f_f_e_c_t___t_y_p_e.html#abeabea3f405f83db3f537369e3ace280ad9401f03ea403cb1afa673332c49da78',1,'ChromaSDK::Mouse::WAVE_EFFECT_TYPE']]]
+];
