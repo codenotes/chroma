@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RazerChromaSampleApplicatio
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.vcxproj", "{AE0A0395-D8A1-4A7F-B9C6-654D9202BDBF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "simpleChroma", "simpleChroma\simpleChroma.vcxproj", "{D9BC223F-365E-4C70-B500-36269DD05ED8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -31,6 +33,14 @@ Global
 		{AE0A0395-D8A1-4A7F-B9C6-654D9202BDBF}.Release|Win32.Build.0 = Release|Win32
 		{AE0A0395-D8A1-4A7F-B9C6-654D9202BDBF}.Release|x64.ActiveCfg = Release|x64
 		{AE0A0395-D8A1-4A7F-B9C6-654D9202BDBF}.Release|x64.Build.0 = Release|x64
+		{D9BC223F-365E-4C70-B500-36269DD05ED8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D9BC223F-365E-4C70-B500-36269DD05ED8}.Debug|Win32.Build.0 = Debug|Win32
+		{D9BC223F-365E-4C70-B500-36269DD05ED8}.Debug|x64.ActiveCfg = Debug|x64
+		{D9BC223F-365E-4C70-B500-36269DD05ED8}.Debug|x64.Build.0 = Debug|x64
+		{D9BC223F-365E-4C70-B500-36269DD05ED8}.Release|Win32.ActiveCfg = Release|Win32
+		{D9BC223F-365E-4C70-B500-36269DD05ED8}.Release|Win32.Build.0 = Release|Win32
+		{D9BC223F-365E-4C70-B500-36269DD05ED8}.Release|x64.ActiveCfg = Release|x64
+		{D9BC223F-365E-4C70-B500-36269DD05ED8}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

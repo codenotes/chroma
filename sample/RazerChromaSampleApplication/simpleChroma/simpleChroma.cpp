@@ -1,3 +1,9 @@
+// simpleChroma.cpp : Defines the exported functions for the DLL application.
+//
+
+#include "stdafx.h"
+
+
 // ConsoleApplication1.cpp : Defines the entry point for the console application.
 //
 
@@ -6,20 +12,7 @@
 
 #include "targetver.h"
 
-#include <stdio.h>
-#include <tchar.h>
 
-
-#define WIN32_LEAN_AND_MEAN
-
-#include <Windows.h>
-
-#include "cguid.h"
-#include "Assert.h"
-#include "stdlib.h"
-#define ASSERT assert
-
-#include <iostream>
 
 using namespace std;
 //! \example ChromaSDKImpl.cpp
@@ -1636,43 +1629,66 @@ bool CChromaSDKImpl::setKey(const char * keyname, DWORD color)
 
 }
 
+CChromaSDKImpl * gChroma;
+
+
 extern "C"
 {
-		bool ChromaSendKeyColors(std::map<std::string, DWORD> & commands);
-		bool ChromaUninitialize();
-		void ChromaReset();
-}
 
+	//std::map<std::string, DWORD> x = {
+	//	{ "E", RGB(0, 0, 255) },
+	//	{ ";", RGB(255, 0, 255) }
+	//};
+
+	_declspec(dllexport) void ChromaUninitialize()
+	{
+		gChroma->UnInitialize();
+		delete gChroma;
+		gChroma = 0;
+
+
+	}
+
+
+	_declspec(dllexport) void ChromaReset()
+	{
+
+		CreateKeyboardEffect(ChromaSDK::Keyboard::CHROMA_NONE, NULL, NULL);
+
+	}
+
+
+	_declspec(dllexport) bool ChromaSendKeyColors(std::map<std::string, DWORD> & commands)
+	{
+		
+
+		if (!gChroma)
+		{
+			gChroma = new CChromaSDKImpl();
+
+			gChroma->Initialize();
+
+			if (!gChroma->IsDeviceConnected(BLACKWIDOW_CHROMA))
+			{
+				return false;
+			}
+
+
+		}
+
+		gChroma->setKeys(commands);
+
+		return true;
+
+
+	}
+
+
+
+}
 
 
 int main()
-{
-	std::map<std::string, DWORD> x = {
-		{ "F", RGB(0, 0, 255) },
-		{ ";", RGB(255, 0, 255) }
-	};
-
-
-	ChromaSendKeyColors(x);
-	
-
-	cin.ignore();
-
-
-	x["1"] = RGB(0, 255, 0);
-	ChromaSendKeyColors(x);
-
-	cin.ignore();
-
-	ChromaReset();
-
-	ChromaUninitialize();
-
-
-}
-
-
-int main2()
 {
 	CChromaSDKImpl c;
 	c.Initialize();
@@ -1687,13 +1703,11 @@ int main2()
 	//c.setKey("H", RGB(0, 0, 255));
 
 	std::map<std::string, DWORD> x = {
-										{ "E", RGB(0, 0, 255) },	
-										{ ";", RGB(255, 0, 255) }
-									};
+		{ "E", RGB(0, 0, 255) },
+		{ ";", RGB(255, 0, 255) }
+	};
 
 	c.setKeys(x);
-
-	
 
 	//while (true)
 	//{
@@ -1704,9 +1718,9 @@ int main2()
 	//		c.ShowKeys(1, 1, VKeys2, RGB(0, 255, 0));
 	//}
 	//c.ShowColor(1, RGB(0, 255, 0));
-	
+
 
 	std::cin.ignore();
 
-    return 0;
+	return 0;
 }
